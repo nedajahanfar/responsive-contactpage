@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightsalmon;
+    font-size: 14px;
+    font-family: 'Architects Daughter', cursive;
+    overflow-y: hidden;
+    background: conic-gradient(from -.5turn at bottom right, deeppink, lightsalmon, rebeccapurple);
+}
+
+.container{
+    width:80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background-color: white;
+    display: flex;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.466);
+}
+
+.contact-left{
+    flex-basis:60%;
+    padding:40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding:40px;
+    background-color: lightpink;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+ input{
+   width:100%;
+   border:none;
+   border-bottom: 1px solid #ccc;
+   outline:none;
+   padding-bottom: 5px;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid gray;
+}
+
+label{
+    margin-bottom: 5px;
+    display: block;
+}
+button{
+    background-color: lightpink;
+    width:100px;
+    border:none;
+    outline:none;
+    height:35px;
+    border-radius:30px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+    cursor:pointer;
+    margin-top: 5px;
+}
+
+.contact-left h3{
+    font-weight:600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 40px;
+}
+
+img{
+    width:20px;
+    margin:12px auto;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.links a{
+    margin-right: 5px;
+}
+
+@media(max-width:950px){
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        overflow-y: scroll;
+    }
+}
